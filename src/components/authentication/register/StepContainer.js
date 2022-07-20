@@ -3,8 +3,11 @@ import React from 'react'
 const StepContainer = ({children, step}) => {
   return (
     <div className='registration-step-container'>
-        <div className='step-icon'>
-            {`step ${step}`}
+        <div className='header-container'>
+            <p>{headerTitle}</p>
+            <div className='step-icon'>
+                {`step ${step}`}
+            </div>
         </div>
         {children}
     </div>
