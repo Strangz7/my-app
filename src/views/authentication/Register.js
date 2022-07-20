@@ -15,7 +15,9 @@ const Register = () => {
             firstName:{message:"", error: false},
             lastName: {message:"", error: false}, 
             email: {message:"", error: false}, 
-            password:{message:"", error: false}
+            phoneNumber: {message:"", error: false}, 
+            password:{message:"", error: false},
+            confirmPasswors: {message:"", error: false}
     })
 
     const handleChange = (e) => {
@@ -120,11 +122,11 @@ const Register = () => {
                 
                 <div className="leftSide-container">
                     <a>
-                        Don't have an account? 
+                        Have an account? 
                         <span style={{color: 'var(--primary_green)',
                                     marginLeft: '4px'
                         }}>
-                        sign up
+                        Login
                         </span>
                     </a>
                     <div className="welcome-text">
@@ -132,9 +134,11 @@ const Register = () => {
                         <p>We are an event management platform, aimed at helping you facilitate and run a smooth event</p>
                     </div>
                     <StepContainer step={1} headerTitle="Let's know you">
-                        <Input text="email" handleChange={handleChange} icon={emailIcon} label= "email" fieldError={fieldError}/>
+                        <Input text="text" handleChange={handleChange} icon={emailIcon} label= "firstName" fieldError={fieldError}/>
                         
-                        <Input text="password" handleChange={handleChange} icon={passwordIcon} label="password" fieldError={fieldError}/>
+                        <Input text="text" handleChange={handleChange} icon={emailIcon} label="lastName" fieldError={fieldError}/>
+
+                        <Input text="text" handleChange={handleChange} icon={emailIcon} label="email" fieldError={fieldError}/>
                     </StepContainer>
                     <div className="social-media">
                         <a>
