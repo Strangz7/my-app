@@ -132,7 +132,9 @@ const Register = () => {
                         <p>We are an event management platform, aimed at helping you facilitate and run a smooth event</p>
                     </div>
                     <StepContainer step={1} headerTitle="Let's know you">
-                        <div>funmi</div>
+                        <Input text="email" handleChange={handleChange} icon={emailIcon} label= "email" fieldError={fieldError}/>
+                        
+                        <Input text="password" handleChange={handleChange} icon={passwordIcon} label="password" fieldError={fieldError}/>
                     </StepContainer>
                     <div className="social-media">
                         <a>
