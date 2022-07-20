@@ -131,19 +131,9 @@ const Register = () => {
                         <h1>Welcome To Norbs</h1>
                         <p>We are an event management platform, aimed at helping you facilitate and run a smooth event</p>
                     </div>
-                    <StepContainer step={1}>
+                    <StepContainer step={1} headerTitle="Let's know you">
                         <div>funmi</div>
                     </StepContainer>
-                    {/* <div className="input-button-fields">
-                        <Input text="firstName" handleChange={handleChange} label= "firstName" fieldError={fieldError}/>
-                        <Input text="lastName" handleChange={handleChange}  label= "lastName" fieldError={fieldError}/>
-
-                        <Input text="email" handleChange={handleChange} icon={emailIcon} label= "email" fieldError={fieldError}/>
-                        
-                        <Input text="password" handleChange={handleChange} icon={passwordIcon} label="password" fieldError={fieldError}/>
-                        
-                        <button onClick={handleClick}>Get Into Norbs</button>
-                    </div> */}
                     <div className="social-media">
                         <a>
                             <div className="social-media-icon"></div>

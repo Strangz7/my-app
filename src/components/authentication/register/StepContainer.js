@@ -1,6 +1,6 @@
 import React from 'react'
 
-const StepContainer = ({children, step}) => {
+const StepContainer = ({children, step, headerTitle}) => {
   return (
     <div className='registration-step-container'>
         <div className='header-container'>
