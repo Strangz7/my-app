@@ -131,7 +131,7 @@ const Register = () => {
                         <h1>Welcome To Norbs</h1>
                         <p>We are an event management platform, aimed at helping you facilitate and run a smooth event</p>
                     </div>
-                    <StepContainer>
+                    <StepContainer step={1}>
                         <div>funmi</div>
                     </StepContainer>
                     {/* <div className="input-button-fields">
