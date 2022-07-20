@@ -10,6 +10,7 @@ const handleClick = (e) => {
 }
 const Register = () => {
     const [userInput, setUserInput] = useState({})
+    const [step, setStep] = useState(1)
     const [fieldError, setFieldError] = useState(
         {
             firstName:{message:"", error: false},
@@ -133,13 +134,28 @@ const Register = () => {
                         <h1>Welcome To Norbs</h1>
                         <p>We are an event management platform, aimed at helping you facilitate and run a smooth event</p>
                     </div>
-                    <StepContainer step={1} headerTitle="Let's know you">
+                    {step === 1 && <StepContainer step={1} headerTitle="Let's know you">
                         <Input text="text" handleChange={handleChange} icon={emailIcon} label= "firstName" fieldError={fieldError}/>
                         
                         <Input text="text" handleChange={handleChange} icon={emailIcon} label="lastName" fieldError={fieldError}/>
 
                         <Input text="text" handleChange={handleChange} icon={emailIcon} label="email" fieldError={fieldError}/>
-                    </StepContainer>
+
+                    </StepContainer>}
+
+                    {step === 2 && <StepContainer step={2} headerTitle="Let's Secure you">
+                        <Input text="text" handleChange={handleChange} icon={emailIcon} label= "firstName" fieldError={fieldError}/>
+                        
+                        <Input text="text" handleChange={handleChange} icon={emailIcon} label="lastName" fieldError={fieldError}/>
+
+                        <Input text="text" handleChange={handleChange} icon={emailIcon} label="email" fieldError={fieldError}/>
+
+                    </StepContainer>}
+                    <button style={{width: '65%'}} className="authentication-button" onClick={handleClick}>Next Step</button>
+                    <div>
+                        <button style={{width: '45%'}} className="authentication-button-alternate" onClick={handleClick}>Go Back</button>
+                        <button style={{width: '45%'}} className="authentication-button" onClick={handleClick}>Register</button>
+                    </div>
                     <div className="social-media">
                         <a>
                             <div className="social-media-icon"></div>
