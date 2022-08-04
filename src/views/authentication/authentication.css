@@ -37,12 +37,13 @@
 }
 .authentication-button{
     border: unset;
-    background-color: var(--primary_green);
+    background-color: white;
     color: black;
     font-weight: bold;
     font-size: 14px;
     border-radius: 4px;
     height: 50px;
+    cursor: pointer;
 }
 
 .leftSide-container a{
@@ -86,12 +87,22 @@
 }
 .step-icon{
     height: min-content;
-    background-color: white;
-    color: var(--primary_green);
+    background-color: var(--primary_green);
+    color: white;
     font-weight: bold;
     font-size: 13px;
     width: 12%;
     padding: 5px;
     border-radius: 4px;
     text-align: center;
+}
+
+.authentication-button-alternate{
+    background-color: transparent;
+    color: var(--primary_green);
+    border: 1px solid white;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
 }
