@@ -1,0 +1,13 @@
+{
+  "accounts": [
+    {
+      "firstName": "Adebayo",
+      "lastName": "Stephen",
+      "email": "stephenadebayo79@gmail.com",
+      "phone": "+234 813 100 3033",
+      "password": "12345",
+      "confirmPassword": "12345",
+      "id": 1
+    }
+  ]
+}

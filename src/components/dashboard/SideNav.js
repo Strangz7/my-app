@@ -35,7 +35,7 @@ const SideNav = () => {
                 onClick={() => setActiveLink(link)} 
                 style={ activeLink === link ? activeStyle: {color:'white' }}>
                 <BsFillWalletFill fontSize={20} 
-                  style={{ marginRight: "2rem" }}
+                  style={{ marginRight: "20px" }}
                   color={activeLink === link ? 'var(--primary_green)' : 'white' }/>
                 {link} 
               </button>

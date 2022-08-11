@@ -3,6 +3,8 @@ import emailIcon from "../../assets/email.svg"
 import passwordIcon from "../../assets/password.svg"
 import "./authentication.css"
 import { useState } from "react"
+// import { Axios } from "axios"
+import axios from "axios"
 
 const handleClick = (e) => {
     console.log(e)
@@ -20,7 +22,12 @@ const Login = () => {
         checkIfFieldIsEmpty(e)
     }
     const handleClick = () => {
-        console.log(userInput)
+        axios.get(`http://localhost:5000/accounts/?email=${userInput["email"]}`).
+        then((data) => {
+            console.log(data)
+        }).
+        catch((error) => console.log(error))
+       
     }
     const checkIfFieldIsEmpty = (e) => {
         switch (e.target.name){

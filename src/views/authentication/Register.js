@@ -5,6 +5,7 @@ import "./authentication.css"
 import { useState } from "react"
 import StepContainer from "../../components/authentication/register/StepContainer"
 import {useNavigate} from "react-router-dom";
+import axios from "axios"
 
 const handleClick = (e) => {
     console.log(e)
@@ -26,11 +27,18 @@ const Register = () => {
         setUserInput({...userInput, [e.target.name]: e.target.value })
         checkIfFieldIsEmpty(e)
     }
-    let navigate = useNavigate();
+
     const handleClick = () => {
-        console.log(userInput)
-        navigate("/Login")
+
+        axios.post("http://localhost:5000/accounts", userInput).
+        then((data) => console.log(data)).
+        catch((error) => console.log(error))
     }
+    let navigate = useNavigate();
+    // const handleClicks = () => {
+    //     console.log(userInput)
+    //     navigate("/Login")
+    // }
     const checkIfFieldIsEmpty = (e) => {
         switch (e.target.name){
             case "firstName":
@@ -125,7 +133,7 @@ const Register = () => {
             <div className="leftSide">
                 
                 <div className="leftSide-container">
-                    <a>
+                    <a onClick={() => navigate("/login")}>
                         Have an account? 
                         <span style={{color: 'var(--primary_green)',
                                     marginLeft: '4px'
