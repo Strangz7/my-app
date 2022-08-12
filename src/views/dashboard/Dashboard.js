@@ -1,7 +1,7 @@
 import React from 'react'
 import {Route, Routes } from 'react-router-dom'
 import Container from '../../components/dashboard/Container'
-import MyEvent from './pages/MyEvents'
+import MyEvent from './pages/events/MyEvents'
 import "./dashboard.css"
 
 const Dashboard = () => {
