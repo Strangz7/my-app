@@ -37,5 +37,19 @@
       "number_of_seats": "",
       "available_tickets":""
     }
+  ],
+  "fakeEvents": [
+    {
+      "title": "Alakija",
+      "description": "today is the day the lorb has made"
+    },
+    {
+      "title": "Norbs",
+      "description": "Get together beach"
+    },
+    {
+      "title": "Ujay",
+      "description": "The gathering of the summoned"
+    }
   ]
 }
