@@ -14,7 +14,7 @@ export const eventReducer = (state = initialState, action) =>{
             }
         case "DELETE_EVENT":
             return {
-                ...state, events: state.events.filter((item, index) => index !== action.payload)
+                ...state, events: state.events.filter((item, index) => index !== action.payload?.id)
             }
         default:
             return state

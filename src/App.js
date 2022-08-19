@@ -7,13 +7,13 @@ import Dashboard from "./views/dashboard/Dashboard";
 const App=()=>{
   return(
     <div className="app">
-      <Router>
+     
         <Routes>
           <Route path="/login" element={<Login/>}/>
           <Route path="/" element={<Register/>}/>
           <Route path="/dashboard/*" element={<Dashboard/>}/>
         </Routes>
-      </Router>
+     
   
     </div>
   )
